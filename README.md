@@ -1,10 +1,10 @@
-python 版本demo
-运行条件: python3 + requests 库
+python 版本demo   
+运行条件: python3 + requests 库  
 
-import hashlib
-import json
-import time
-from urllib import parse
+import hashlib   
+import json   
+import time   
+from urllib import parse   
 
 import requests
 
