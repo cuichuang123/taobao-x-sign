@@ -89,11 +89,18 @@ def fetch_rate(sign_res, data):
     return requests.get(taobao_url, headers=header).json()
 
 
+
+
 if __name__ == '__main__':
+
     sign_res = get_sign(data)  # 获取x-sign有需要的请联系qq951263019
+    
     print(sign_res)
+    
     rate = fetch_rate(sign_res, data)
+    
     print(rate)
+    
 
 # 技术支持： 
 qq:516766219
