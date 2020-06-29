@@ -46,7 +46,9 @@ utdid = 'XcZJFF61gMADAep76BgfX2AD'
 
 
 def get_sign(data):
+
     url = 'http://api.xsign.com/api/sign'  # 获取签名的地址
+    
     params = {
         #'sid': sid,
         'data': hashlib.md5(data.encode(encoding='UTF-8')).hexdigest(),  # 获取签名需要将data进行md5处理，以方便数据传输
@@ -67,6 +69,7 @@ def get_sign(data):
 
 
 def fetch_rate(sign_res, data):
+
     header = {
         #'x-sid': sid,
         'user-Agent': 'MTOPSDK%2F3.1.1.7+%28Android%3B4.4.2%3BXiaomi%3BMI+6%29',
