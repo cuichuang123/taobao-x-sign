@@ -93,7 +93,7 @@ def fetch_rate(sign_res, data):
 
 if __name__ == '__main__':
 
-    sign_res = get_sign(data)  # 获取x-sign有需要的请联系qq951263019
+    sign_res = get_sign(data)  
     
     print(sign_res)
     
